@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>funcs</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 	function addTwoNumbers(firstNum,secondNum){
+ 		let sum = firstNum + secondNum;
+        let returnedValue;
+ 		firstNum == secondNum ? returnedValue= sum*3:returnedValue=sum;
+ 		return returnedValue; 
+ 	}
+    
+    function isFifty(firstNum,secondNum){
+    	let sum = firstNum + secondNum;
+    	if( firstNum == 50 || secondNum == 50 || sum == 50){
+    		return true;
+    	}
+    	return false;
+    }
+
+    function pyAdder(str){
+    	if( str.startsWith('Py')){
+             return str;
+    	}
+    	return `Py${str}`;
+    }
+
+    function replacer(str,num){
+        let nwStrArr= str.split('');
+    	nwStrArr.splice(num,1);
+        return nwStrArr.join('');
+    }
+
+    function isMultiple(num){
+    	if( num %7 ==0 || num %3 == 0){
+    		return true;
+    	}
+    	return false;
+    }
+     
+    
+    // console.log(addTwoNumbers(10,10));
+    // console.log(isFifty(10,10));
+    // console.log(pyAdder('Pyaile'));
+    // console.log(replacer('alazar',2));
+    // console.log(isMultiple(5));
+ </script>
+</body>
+</html>
