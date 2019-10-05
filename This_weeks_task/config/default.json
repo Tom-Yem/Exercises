@@ -1,0 +1,4 @@
+{
+    "db":"mongodb://localhost/School",
+    "privateKey":"Interstellar"
+}
